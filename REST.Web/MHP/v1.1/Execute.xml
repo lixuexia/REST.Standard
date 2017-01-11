@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <METHOD VALUE="POST">此文件适用与POST类型的请求</METHOD>
+  <!--首先从HANDLERS中寻找合适的HANDLER来处理请求,如未找到,则从EXTENDS中寻找-->
+  <EXTENDS>
+    <!--配置文件包含的扩展文件-->
+    <INCLUDE SRC="/Order.XML"></INCLUDE>
+    <INCLUDE SRC="/Users.XML"></INCLUDE>
+  </EXTENDS>
+</CONFIG>

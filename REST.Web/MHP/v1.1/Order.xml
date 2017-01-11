@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <METHOD VALUE="GET">此文件适用与GET类型的请求</METHOD>
+  
+  <HANDLERS MARK="订单相关" DESCRIPTION="订单">
+    <HANDLER KEY="OrderList"
+             ASSEMBLY="REST.Action.v11.dll"
+             CLASS=" REST.Action.v11.Order.OrderAction"
+             METHOD="OrderList"
+             JSON="FALSE"
+             INPUTSDKCLASSMAP="REST.Model.v11.Input.OrderList"
+             OUTPUTSDKCLASSMAP="REST.Model.v11.Output.OrderList"
+             INPUTSDKASSEMBLY="REST.Model.v11.dll"
+             OUTPUTSDKASSEMBLY="REST.Model.v11.dll"
+             OUTISLIST="">
+      订单列表接口
+    </HANDLER>
+  </HANDLERS>
+</CONFIG>

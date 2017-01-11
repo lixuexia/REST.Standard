@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <METHOD VALUE="GET">此文件适用与GET类型的请求</METHOD>
+  <HANDLERS MARK="用户相关" DESCRIPTION="用户">
+    <HANDLER KEY="About"
+               ASSEMBLY="REST.Action.v11.dll"
+               CLASS="REST.Action.v11.User.UserCommonAction"
+               METHOD="About"
+               JSON="FALSE"
+               INPUTSDKCLASSMAP="REST.Model.v11.Input.User.AboutInput"
+               OUTPUTSDKCLASSMAP="REST.Model.v11.Output.User.AboutOutput"
+               INPUTSDKASSEMBLY="REST.Model.v11.dll"
+               OUTPUTSDKASSEMBLY="REST.Model.v11.dll"
+               OUTISLIST="">
+      关于我们
+    </HANDLER>
+  </HANDLERS>
+</CONFIG>

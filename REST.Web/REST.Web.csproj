@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88F26CA9-91E1-4C08-8FD8-28C2C905CF7F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REST.Web</RootNamespace>
+    <AssemblyName>REST.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REST.Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\API\Android\ActionHandler.java" />
+    <Content Include="App_Data\API\Android\RESTResponse.java" />
+    <Content Include="App_Data\API\Android\WebUtils.java" />
+    <Content Include="App_Data\API\IOS\ActionHandler.h" />
+    <Content Include="App_Data\API\IOS\RESTResponse.h" />
+    <Content Include="App_Data\API\IOS\WebUtils.h" />
+    <Content Include="App_Data\ErrorConfig.xml" />
+    <Content Include="App_Data\USERS.xml" />
+    <Content Include="App_Data\v1.1\CacheConfig.xml" />
+    <Content Include="css\base.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Description.aspx" />
+    <Content Include="GetModelFile_Android.aspx" />
+    <Content Include="GetModelFile_IOS.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\load.gif" />
+    <Content Include="Images\loadblack.gif" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="key.txt" />
+    <Content Include="List.aspx" />
+    <Content Include="MHP\v1.1\Order.xml" />
+    <Content Include="MHP\v1.1\Execute.xml" />
+    <Content Include="MHP\v1.1\Users.xml" />
+    <Content Include="Signature.aspx" />
+    <Content Include="SignatureMethod.aspx" />
+    <Content Include="TransFile.aspx" />
+    <Content Include="Version.aspx" />
+    <Content Include="ViewGroup.aspx" />
+    <Content Include="ViewInterface.aspx" />
+    <Content Include="ViewInterfaceXml.aspx" />
+    <Content Include="ViewModelDefine.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\XmlModelConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Description.aspx.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Description.aspx.designer.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetHandler.ashx.cs">
+      <DependentUpon>GetHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GetModelFile_Android.aspx.cs">
+      <DependentUpon>GetModelFile_Android.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetModelFile_Android.aspx.designer.cs">
+      <DependentUpon>GetModelFile_Android.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetModelFile_IOS.aspx.cs">
+      <DependentUpon>GetModelFile_IOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetModelFile_IOS.aspx.designer.cs">
+      <DependentUpon>GetModelFile_IOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostHandler.ashx.cs">
+      <DependentUpon>PostHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signature.aspx.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signature.aspx.designer.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureMethod.aspx.cs">
+      <DependentUpon>SignatureMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignatureMethod.aspx.designer.cs">
+      <DependentUpon>SignatureMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransFile.aspx.cs">
+      <DependentUpon>TransFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransFile.aspx.designer.cs">
+      <DependentUpon>TransFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Version.aspx.cs">
+      <DependentUpon>Version.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Version.aspx.designer.cs">
+      <DependentUpon>Version.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGroup.aspx.cs">
+      <DependentUpon>ViewGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGroup.aspx.designer.cs">
+      <DependentUpon>ViewGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInterface.aspx.cs">
+      <DependentUpon>ViewInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewInterface.aspx.designer.cs">
+      <DependentUpon>ViewInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInterfaceXml.aspx.cs">
+      <DependentUpon>ViewInterfaceXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewInterfaceXml.aspx.designer.cs">
+      <DependentUpon>ViewInterfaceXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModelDefine.aspx.cs">
+      <DependentUpon>ViewModelDefine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewModelDefine.aspx.designer.cs">
+      <DependentUpon>ViewModelDefine.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppSettings.config" />
+    <Content Include="App_Data\API\IOS\WebUtils.m" />
+    <Content Include="ConnectionStrings.config" />
+    <Content Include="GetHandler.ashx" />
+    <Content Include="PostHandler.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\REST.Base\REST.Base.csproj">
+      <Project>{945e94b9-c49a-46ef-9412-554b5acef4a3}</Project>
+      <Name>REST.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REST.Cache\REST.Cache.csproj">
+      <Project>{60a6f862-3368-4778-a13d-444fcf0e8818}</Project>
+      <Name>REST.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REST.Engine\REST.Engine.csproj">
+      <Project>{6500271a-f823-4c0b-a75e-3d516e78a38e}</Project>
+      <Name>REST.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60122</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://www.lixxrest.com:43004/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <!--系统错误编码列表-->
+  <LISTS>
+    <ERROR ERRORCODE="0000" NAME="请求成功"></ERROR>
+    <ERROR ERRORCODE="0001" NAME="请求参数不完整"></ERROR>
+    <ERROR ERRORCODE="0002" NAME="签名验证失败"></ERROR>
+    <ERROR ERRORCODE="0003" NAME="应用appkey无效"></ERROR>
+    <ERROR ERRORCODE="0004" NAME="时间戳验证失败"></ERROR>
+    <ERROR ERRORCODE="0005" NAME="配置文件异常"></ERROR>
+    <ERROR ERRORCODE="0006" NAME= "版本参数异常"></ERROR>
+    <ERROR ERRORCODE="0007" NAME="Parameter参数对象不能为空"></ERROR>
+    <ERROR ERRORCODE="0008" NAME="Parameter参数json格式错误"></ERROR>
+    <ERROR ERRORCODE="0009" NAME="Parameter参数json中必传参数值不能为空"></ERROR>
+    <ERROR ERRORCODE="0010" NAME="获取数据失败"></ERROR>
+    <ERROR ERRORCODE="0011" NAME="未提供接口方法名"></ERROR>
+    <ERROR ERRORCODE="8000" NAME="服务器错误,配置不正确或接口暂未开放"></ERROR>
+    <ERROR ERRORCODE="9000" NAME="未知错误"></ERROR>
+    <ERROR ERRORCODE="5000" NAME="接口错误"></ERROR>
+  </LISTS>
+  <EXTENDS>
+    <!--配置文件包含的扩展文件<INCLUDE SRC="/Common.xml"></INCLUDE>-->
+  </EXTENDS>
+</CONFIG>

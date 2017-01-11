@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <app_key>REST101</app_key>
+    <app_secret>6F2D157B25E916C064CF07BB1234569D</app_secret>
+    <descriptions>账户服务客户端</descriptions>
+    <OrderHead>4</OrderHead>
+  </User>
+  <User>
+    <app_key>REST102</app_key>
+    <app_secret>BC54A8C97F4123456F2235819AD9B4EAC</app_secret>
+    <descriptions>Windows系统客户端</descriptions>
+    <OrderHead>4</OrderHead>
+  </User>
+</ArrayOfUser>
